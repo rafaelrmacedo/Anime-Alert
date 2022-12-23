@@ -1,5 +1,7 @@
 package AnimeAlert.animeAlert.entities;
 
+import org.hibernate.type.descriptor.jdbc.VarcharJdbcType;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,28 +13,21 @@ import jakarta.persistence.Table;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String name;
-    private String email;
+    private Integer user_id;
+    private String username;
     private String password;
     
-    public Integer getId() {
+    public Integer getUserId() {
         return id;
     }
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId(Integer user_id) {
+        this.user_id = user_id;
     }
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return username;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUserName(String username) {
+        this.username = username;
     }
     public String getPassword() {
         return password;
