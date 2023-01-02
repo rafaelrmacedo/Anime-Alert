@@ -1,7 +1,6 @@
 package AnimeAlert.animeAlert.entities;
 
 import org.hibernate.type.descriptor.jdbc.VarcharJdbcType;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
